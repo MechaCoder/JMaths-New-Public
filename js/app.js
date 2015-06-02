@@ -1,5 +1,7 @@
 console.log("m.p. > start");
 
+var CanvasIDs = ['number1units', 'number1tens', 'number1ten' ,'number2units']
+
 function render(ren, intv){
 	var can1u = document.getElementById(ren);
 	can1u = can1u.getContext('2d');
@@ -12,9 +14,20 @@ function render(ren, intv){
 	console.log(intv);
 }
 
+function ClearCanvas(CanvasID){
+	var CanID = document.getElementById(CanvasID);
+	var CanC  = CanID.getContext('2d');
+	CanC.clearRect(0,0,CanC.width,CanC.height);
+}
+
+function clearAllCanvas(){
+	for (i = 0, i < CanvasIDs.length(), i++1){
+		ClearCanvas(CanvasIDs[i]);
+	}
+}
+
 $(document).ready(function() {
-	render('number1units', 1);
-	render('number1tens')
+
 })
 
 console.log("m.p. > finished");
