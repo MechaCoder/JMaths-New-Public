@@ -36,17 +36,36 @@ function clearAllCanvas(){
 
 }
 
-function FullRender(int1, int2, int3, int4){
-	var canvasObject1 = CanvasIDs[0];
-	canvasObject1 = getContext( canvasData[Context] );
-	canvasObject1.beginPath();
-}	
+function lineDraw(ren, start, end, lineColor){
+	var can1u = document.getElementById( CanvasIDs[ren] ); console.log('m.p. >> ' + CanvasIDs[ren]);
+	can1u = can1u.getContext( canvasData['Context'] );
+	can1u.beginPath();
+	can1u.moveTo(start[0], start[1]);
+	can1u.lineTo( end[0], end[1] ) ;
+	can1u.lineWidth = canvasData['lineWidth'];
+	can1u.strokeStyle = canvasData['lineColors'][parseInt(lineColor)];
+	can1u.stroke();
+}
 
+function renderCanvas(int1, int2){
+	var Cmax = canvasData['canvasSize'];
+	var Cmin = [0,0];
+	var loopVal = 0
+	console.log(int1);
+	while(loopVal != int1){
+		Cmin[1] = Cmin[1] + 100; console.log(Cmax[1]);
+		Cmax[0] = Cmax[0] - 100; console.log(Cmax[0]);
+		lineDraw(0, Cmin, Cmax, 0 );
+		loopVal = loopVal + 1;
+	}
+}
 
 $(document).ready(function() {
 	clearAllCanvas();
 	canvasDataGet();
-	renderTest(CanvasIDs[0], 1);
+	//lineDraw(0,[0,100],[900,1000]);
+
+	renderCanvas(2);
 	
 	//console.log( canvasData['canvasSize'] );
 
