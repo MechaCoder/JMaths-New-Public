@@ -28,4 +28,5 @@ body {
 .cust-page-nav > a > div {
 	width: 120px;
 	text-align:center;
+	font-size: 2em;
 }
