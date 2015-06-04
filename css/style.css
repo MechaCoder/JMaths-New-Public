@@ -3,15 +3,29 @@
 	background-color: transparent;
 	position: absolute;
 	width: 100%;
-	height: 80%;
+	height: 90%;
 }
-
 body {
 	background-color: pink;
 	font-size: 12px;
 }
+
 .cust-page-title {
 	font-size: 2.5em;
 	float: left;
 }
 
+.cust-page-nav {
+	padding-top: 20px;
+}
+
+
+.cust-page-nav,
+.cust-page-nav a  {
+	float: right;
+}
+
+.cust-page-nav > a > div {
+	width: 120px;
+	text-align:center;
+}
