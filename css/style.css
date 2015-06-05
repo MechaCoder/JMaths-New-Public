@@ -1,13 +1,17 @@
 .canvas {
-	border: brown 5px solid;
+	border: blue 5px solid;
 	background-color: transparent;
 	position: absolute;
 	width: 100%;
 	height: 90%;
 }
 body {
-	background-color: pink;
+	background-color: #766980;
 	font-size: 12px;
+}
+
+header{
+	background-color: #766980;
 }
 
 .cust-page-title {
@@ -26,7 +30,11 @@ body {
 }
 
 .cust-page-nav > a > div {
-	width: 120px;
+	width: 200px;
 	text-align:center;
 	font-size: 2em;
+	background-color: #DB5A6B;
+	margin-left: 10px;
 }
+
+.can1 {background-color: black;}
