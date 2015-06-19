@@ -10,5 +10,4 @@ $appJS = True;
 	<canvas id='number2units' class='canvas can3' width='1000' height='1000'></canvas>
 	<canvas id='number2tens'  class='canvas can4' width='1000' height='1000'></canvas>
 
-
 <?php include('foot.php'); ?>
