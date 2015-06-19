@@ -1,0 +1,41 @@
+
+.cust-sidebar{
+	background-color: white;
+	width: 5%;
+	height: 77%;
+	position: absolute;
+	z-index: 5;
+	margin-top: 5%;
+	text-align: center;
+	background-color: #5B8930;
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.cust-sidebar h4.hide {
+	display: none;
+}
+
+.cust-sidebar:hover {
+	width: 20%;
+}
+
+.cust-sidebar:hover > .hide {
+	display: block !important;
+}
+
+.cust-sidebar {
+
+}
+
+.cust-sidebar > input, .cust-sidebar > button  {
+	width: 50%;
+	height: 2em;
+	font-size: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

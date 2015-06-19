@@ -6,3 +6,6 @@
 <? //local stuff ?>
 <script src='js/app.js'></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<? // sidebar ?>
+<link rel='stylesheet' type="text/css" href='css/sidebar.css'>
+<script src='js/sidebar.js'></script>
