@@ -7,6 +7,6 @@ $appJS = False;
 <div>
 thise is the index files
 
-<a href='./app'>click</a>
+<a href='./app.php'>click</a>
 </div>
 <?php include('foot.php'); ?>
